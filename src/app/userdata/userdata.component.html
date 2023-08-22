@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="card-title">
+        <div class="card-book">
+            <mat-toolbar >
+                <!-- <img id="img" src="assets/school_logo.jpg" alt="Logo"> -->
+                <span><h1 >USER DATA</h1></span>
+                
+                <div class="navlist">
+                     <button (click)="openDialog()" id="bar" >Add User</button>
+                   
+                    </div>
+                   
+                        </mat-toolbar>
+           
+        <table id="table">
+            
+            <thead>
+                <tr>
+                    
+                    <th> ID</th>
+                    <th> UserName</th>
+                    <th>Email</th>
+                    <th> Phone</th>
+                    <th> Type</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                    
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users ;let i=index">
+                <!-- <td>{{i+1}}</td> -->
+                <td>{{user.id}}</td>
+                <td>{{user.username}}</td>
+               <td>{{user.Email}}</td>
+                <td>{{user.Phone}}</td>
+                <td> {{user.type}}</td>
+                <td>
+                    <button class="edit" (click)="onedit(user)" class="btn btn-danger">Edit</button>
+                </td>
+                <td>
+                    <button id="delete" (click)="removeItem(user)" class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+   </div>

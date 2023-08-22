@@ -1,0 +1,48 @@
+<div  id="background">
+    <mat-card>
+        <mat-card-title>Register</mat-card-title>
+        <mat-card-subtitle>Enter your Details</mat-card-subtitle>
+        <mat-card-actions>
+            <form id="registerform" [formGroup]='registerForm'>
+                <div class="example-container">
+                    <!-- <mat-form-field appearance="fill">
+                        <mat-label> id</mat-label>
+                        <input matInput placeholder="id" [formControl]="id" type="number" required>
+                    </mat-form-field>
+                    <br> -->
+                    <mat-form-field appearance="fill">
+                        <mat-label> userName</mat-label>
+                        <input matInput formControlName="username" placeholder="username" type="username" required>
+                        <mat-error> {{getUserNameErrorMsg()}}</mat-error>
+    
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="Email" placeholder="pat@example.com" type="email" required>
+                        <mat-error>{{getErrorMessage1()}}</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>password</mat-label>
+                        <input matInput formControlName="password" placeholder="Password" type="password" required>
+                        <mat-error>{{getPasswordErrorMsg()}}</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Phone no</mat-label>
+                        <input matInput formControlName="Phone" placeholder="phone no" type="number" required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Type</mat-label>
+                        <input matInput formControlName="type" placeholder="type" type="type" required>
+                    </mat-form-field>
+
+                </div>
+            </form>
+            <button mat-raised-button color type="submit" (click)="register()" color="primary">Register</button>
+        </mat-card-actions>
+        <a routerLink="/userlogin"> Already Registered? click to login</a>
+    </mat-card>
+</div>

@@ -1,0 +1,122 @@
+<div class="container">
+    <!-- <div class="center">
+        <a ><button type="button" class="btn btn-danger">Add Foods</button></a>
+       <a ><button type="button" class="btn btn-warning" style="margin-left: 20%;">User Data</button></a>
+       <a ><button type="button" class="btn btn-success" style="margin-left: 20%;">Today's Bill</button></a>
+       <a ><button type="button" class="btn btn-success" style="margin-left: 20%;">Month Bill</button></a>
+    </div> -->
+    <mat-toolbar >
+        <!-- <img id="img" src="assets/school_logo.jpg" alt="Logo"> -->
+        <!-- <span><h1 id =title>SURABHI RESTAURANTS</h1></span>
+         -->
+        <div class="navlist">
+             <a routerLink='/addfood' id="bar" >Add Foods</a>
+            <a id="bar" routerLink='/userdata'  href="#">User Data</a>
+            <a id="bar" routerLink='/todaybill' href="#" >Today's Bill</a>
+            <a  id="bar"routerLink='/monthbill' href="#" >Month Bill</a>
+            </div>
+           
+                </mat-toolbar>
+    <br>
+    
+    
+    <div id="background">
+        <div id="book" >
+          <div *ngFor = "let menus of Menu"class="inline-setter" >
+          <span class="card-controller card" style="width: 19rem;"> 
+             <!-- <img class="card-img-top" src='../../assets/{{book.imageId}}.jpg'
+             onerror="this.src='https:/motivatevalmorgan.com/wp-content/uploads/2016/06/default-movie.jpg' "
+             height="200" alt="Card image cap"> -->
+             <img src="{{menus.images}}">
+             <div class="card-body">
+                <h2 class="card_title"
+                   style="max-width: calc(70 * 1vw)">{{menus.name}}</h2>
+             </div>
+             <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price : {{menus.price}}</li>
+                <li class="list-group-item">Description : {{menus.description}}</li>
+            <li class="list-group-item">Cuisine : {{menus.cuisine_name}}</li>
+            <li class="list-group-item">Type : {{menus.type}}</li>
+            
+             <li class="list-group-item">Quantity: {{menus.consumable}}</li>
+                <div class="center">
+                    
+                    <a > <button (click)="onedit(menus)">EDIT</button></a>  
+        <!-- <button (click) = "edit(menus)" type="button" class="btn btn-success" data-bs-toggle="modal"
+         data-bs-target="#exampleModal">EDIT</button> -->
+                <button id="btn1"(click)="delete(menus)" >DELETE</button>
+             </div>
+             </ul>
+             <!-- <table>
+                 <tr>Description : {{menus.description}}</tr>
+                 <tr>Cuisine : {{menus.cuisine_name}}</tr>
+                 <tr>Type : {{menus.type}}</tr>
+                 <tr>Price : {{menus.price}}</tr>
+                 <tr>Quantity: {{menus.consumable}}</tr>
+             </table> -->
+             <div class="card-body">
+                <!-- <a href="addfav?id=${book.id}" class="btn btn-warning">Add to Favourite</a>
+                <a href="readlaterid?id=${book.id}" class="btn btn-success">Read Later</a> -->
+             </div>
+
+             
+         
+         
+            </span>
+          </div>
+       </div>
+      </div>
+ 
+    
+ </div>
+ <!-- <div>
+     <div class="modal-dialog">
+     <div class="modal-content">
+         <div class="modal-header">
+             <h5 class="modal-title" id="exampleModelLabel">Edit Food Items</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+             <form [formGroup]="formValue">
+                 <div class="mb-3">
+                     <label class="form-label">name</label>
+                     <input type="text" formControlName="name" class="form-control" placeholder="Fooditem"
+                     id="exampleinputEmail" aria-describedby="emailHelp">
+                 </div>
+                 <div class="mb-3">
+                    <label class="form-label">price</label>
+                    <input type="text" formControlName="price" class="form-control" placeholder="price"
+                    id="exampleinputEmail" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">description</label>
+                    <input type="text" formControlName="description" class="form-control" placeholder="description"
+                    id="exampleinputEmail" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">type</label>
+                    <input type="text" formControlName="type" class="form-control" placeholder="Fooditem"
+                    id="exampleinputEmail" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">cuisine_name</label>
+                    <input type="text" formControlName="cuisine_name" class="form-control" placeholder="Fooditem"
+                    id="exampleinputEmail" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">consumable</label>
+                    <input type="text" formControlName="consumable" class="form-control" placeholder="Fooditem"
+                    id="exampleinputEmail" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">images</label>
+                    <input type="text" formControlName="images" class="form-control" placeholder="Fooditem"
+                    id="exampleinputEmail" aria-describedby="emailHelp">
+                </div>
+
+             </form>
+
+         </div>
+     </div>
+    </div>
+ </div> -->

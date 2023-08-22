@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<mat-toolbar >
+   <!-- <img id="img" src="assets/school_logo.jpg" alt="Logo"> -->
+   <span><h1 >Welcome !!</h1></span>
+   
+   <div class="navlist">
+        
+        <button id="cart" type="button" routerLink="/addcart">My Cart</button>
+        
+      
+       </div>
+      
+           </mat-toolbar>
+<div id="background">
+    <div id="book" >
+      <div *ngFor = "let menus of Menu"class="inline-setter" >
+      <span class="card-controller card" style="width: 19rem;"> 
+         <!-- <img class="card-img-top" src='../../assets/{{book.imageId}}.jpg'
+         onerror="this.src='https:/motivatevalmorgan.com/wp-content/uploads/2016/06/default-movie.jpg' "
+         height="200" alt="Card image cap"> -->
+         <img src="{{menus.images}}">
+         <div class="card-body">
+            <h2 class="card_title"
+               style="max-width: calc(70 * 1vw)">{{menus.name}}</h2>
+         </div>
+         <ul class="list-group list-group-flush">
+            <li class="list-group-item">Price : {{menus.price}}</li>
+            <li class="list-group-item">Description : {{menus.description}}</li>
+        <li class="list-group-item">Cuisine : {{menus.cuisine_name}}</li>
+        <li class="list-group-item">Type : {{menus.type}}</li>
+        
+         <li class="list-group-item">Quantity: {{menus.consumable}}</li>
+            <div class="center">
+             <button type="button" class="plus" (click)=inc(menus)><i class="fa fa-plus"></i></button>
+        <span>1</span>
+        <button type="button" class="plus" (click)=dec(menus)><i class="fa fa-minus"></i></button>
+        <a routerLink="/addcart">   <button class="btn btn-danger" (click)="addlist(menus)">Add to Cart</button></a>
+         </div>
+         </ul>
+         <!-- <table>
+             <tr>Description : {{menus.description}}</tr>
+             <tr>Cuisine : {{menus.cuisine_name}}</tr>
+             <tr>Type : {{menus.type}}</tr>
+             <tr>Price : {{menus.price}}</tr>
+             <tr>Quantity: {{menus.consumable}}</tr>
+         </table> -->
+         <!-- <div class="hotel-menus">
+            <app-menu-item [hotel]="hotel" (addToMyCartEvent)="addToMyCart($event)" 
+            [class]="{'apply-felx-basis': cartItems.length}"></app-menu-item>
+            <mat-divider [vertical]="true"></mat-divider>
+        </div> -->
+         <div class="card-body">
+            <!-- <a href="addfav?id=${book.id}" class="btn btn-warning">Add to Favourite</a>
+            <a href="readlaterid?id=${book.id}" class="btn btn-success">Read Later</a> -->
+         </div>
+      </span>
+      </div>
+   </div>
+  </div>
+  

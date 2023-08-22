@@ -1,0 +1,67 @@
+#loginform{
+    width: 30vw;
+    margin: 0px auto;
+   
+}
+.errormsg{
+    color: red;
+}
+#login{
+	padding: 10%;
+    font-size: 3em;
+    color: #953d95 !important;
+}
+#background{
+    background-image:
+		url('https://xd.adobe.com/ideas/wp-content/uploads/2020/09/Being-Shady-How-to-Use-Gradient-Color-in-UX-Design-8-825x550.jpeg');
+	background-size: cover;
+    height: 90vh;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#reg{
+    margin-left: 30px;
+}
+.btn-responsive 
+        {
+            white-space: normal !important;
+            word-wrap: break-word;
+
+    background: plum;
+     background-image: -webkit-linear-gradient(top, #8E0505, #8E0505);
+     background-image: -moz-linear-gradient(top, #8E0505, #8E0505);
+     background-image: -ms-linear-gradient(top, #8E0505, #8E0505);
+     background-image: -o-linear-gradient(top, #8E0505, #8E0505);
+     background-image: -webkit-gradient(to bottom, #8E0505, #8E0505);
+     -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+     border-radius: 3px;
+     color: #FFFFFF;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+     /* padding: 10px 20px 10px 20px; */
+     /* margin: 50px auto; */
+     /* border: solid #337FED 1px; */
+     text-decoration: none;
+     display: inline-block;
+     cursor: pointer;
+     text-align: center;
+        }
+.btn-responsive:hover {
+            border: solid rgba(0,0,0,0.4)f 1px;
+            /* background: #30E3CB; */
+            background-image: -webkit-linear-gradient(top, #FC4F4F, #FC4F4F);
+            background-image: -moz-linear-gradient(top, #FC4F4F, #FC4F4F);
+            background-image: -ms-linear-gradient(top, #FC4F4F, #FC4F4F);
+            background-image: -o-linear-gradient(top, #FC4F4F, #FC4F4F);
+            background-image: -webkit-gradient(to bottom, #FC4F4F, #FC4F4F);
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+            text-decoration: none;
+         }
+         #reg{
+            margin-left: 30px;
+        }
+

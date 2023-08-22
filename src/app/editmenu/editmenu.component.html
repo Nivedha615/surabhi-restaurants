@@ -1,0 +1,175 @@
+
+
+ <!-- <div  id="background">
+    <mat-card>
+        <mat-card-title>EDIT FOOD ITEM</mat-card-title>
+       
+        <mat-card-actions>
+            <form id="editform" [formGroup]='editForm'>
+                <div class="example-container">
+                    <mat-form-field appearance="fill">
+                        <mat-label> id</mat-label>
+                        <input matInput placeholder="id" [formControl]="id" type="number" >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label> Name</mat-label>
+                        <input matInput formControlName="Name" placeholder="" type="username" >
+                        
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Price</mat-label>
+                        <input matInput formControlName="price" placeholder="" type="email" >
+                        
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Description</mat-label>
+                        <input matInput formControlName="Description" placeholder="" >
+                        
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Type</mat-label>
+                        <input matInput formControlName="Type" placeholder="" >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Cuisine</mat-label>
+                        <input matInput formControlName="Cuisine" placeholder="" >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Quantity</mat-label>
+                        <input matInput formControlName="Quantity" placeholder="" >
+                    </mat-form-field>
+                </div>
+            </form>
+            <button mat-raised-button color type="submit" (click)="update()" color="primary">Update</button>
+        </mat-card-actions>
+        
+    </mat-card>
+</div> -->
+<!-- <mat-card-subtitle>Enter your Details</mat-card-subtitle> -->
+
+<!-- <div  id="background">
+    <mat-card>
+        <mat-card-title>EDIT FORM</mat-card-title>
+       
+        <mat-card-actions>
+            <form id="menuform" [formGroup]='menuForm'>
+                <div class="example-container">
+                    
+                 <mat-form-field appearance="fill">
+                        <mat-label> Name</mat-label>
+                        <input matInput formControlName="name" placeholder="name" type="name" >
+                        
+    
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Price</mat-label>
+                        <input matInput formControlName="price" placeholder="price" type="price" >
+                        
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Description</mat-label>
+                        <input matInput formControlName="description" placeholder="Description" type="Description" >
+                        
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Type</mat-label>
+                        <input matInput formControlName="type" placeholder="Type" type="name" >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>cuisine_name</mat-label>
+                        <input matInput formControlName="cuisine_name" placeholder="Cuisine" type="name" >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Quantity</mat-label>
+                        <input matInput formControlName="consumable" placeholder="Quantity" type="name" >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Image</mat-label>
+                        <input matInput formControlName="images" 
+                                      type="text" required>
+                
+                      </mat-form-field>
+                
+                <div mat-dialog-actions [align]="'end'">
+                    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+                    <button mat-raised-button color type="submit" (click)="update()" color="primary">Update</button>
+                  </div>
+                </div>
+               
+            </form>
+           </mat-card-actions>
+</mat-card>
+</div> -->
+<div class="dialog">
+<form id = "menuform" [formGroup] = 'menuForm'>
+    <h1 mat-dialog-title>Edit Dishes</h1>
+      <div mat-dialog-content>
+           <mat-form-field appearance="fill">
+             <mat-label>Dish Name</mat-label>
+               <input matInput formControlName="name"
+                             type="text" required>
+           </mat-form-field>
+           <br>
+             <mat-form-field appearance="fill"> 
+               <mat-label>Description</mat-label>
+               <input matInput formControlName="description" 
+                             type="text" required>
+           </mat-form-field>
+             <br>
+             <mat-form-field  appearance="fill">
+               <mat-label>Type Of Dish</mat-label>
+               <input matInput formControlName="type" 
+                             type="text" required>
+       
+             </mat-form-field>
+             <br>       
+             <mat-form-field appearance="fill">
+               <mat-label>cuisine-Name</mat-label>
+               <input matInput formControlName="cuisine_name" 
+                             type="text" required>
+       
+             </mat-form-field>
+             <br>
+             <mat-form-field appearance="fill">
+               <mat-label>Price</mat-label>
+               <input matInput formControlName="price" 
+                             type="text" required>
+       
+             </mat-form-field>
+             <br>
+           
+             <mat-form-field appearance="fill">
+               <mat-label>Consumable</mat-label>
+               <input matInput formControlName="consumable"
+                             type="text" required>
+       
+             </mat-form-field>
+             
+             <br>
+             <mat-form-field appearance="fill">
+               <mat-label>Image</mat-label>
+               <input matInput formControlName="images" 
+                             type="text" required>
+       
+             </mat-form-field>
+             <br>
+           </div>
+             <div mat-dialog-actions [align]="'end'">
+               <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+               <button mat-raised-button color="primary" (click)="update()">Update</button>
+             </div>
+          </form>
+        </div>
+

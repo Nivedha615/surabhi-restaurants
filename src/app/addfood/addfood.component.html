@@ -1,0 +1,64 @@
+<div  id="background">
+    <mat-card>
+        <mat-card-title>ADD FOOD</mat-card-title>
+        <mat-card-subtitle>Enter the Details</mat-card-subtitle>
+        <mat-card-actions>
+            <form id="editform" [formGroup]='editForm'>
+                <div class="example-container">
+                    <!-- <mat-form-field appearance="fill">
+                        <mat-label> id</mat-label>
+                        <input matInput placeholder="id" [formControl]="id" type="number" >
+                    </mat-form-field>
+                    <br> -->
+                    <mat-form-field appearance="fill">
+                        <mat-label>Food Name</mat-label>
+                        <input matInput formControlName="name" placeholder="food name" type="name" >
+                        
+    
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Description</mat-label>
+                        <input matInput formControlName="description" placeholder="Description" type="Description" >
+                        
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Type</mat-label>
+                        <input matInput formControlName="Type" placeholder="Type" type="Type" >
+                        
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>cuisine_name</mat-label>
+                        <input matInput formControlName="cuisine_name" placeholder="cuisine_name" type="name" >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>price</mat-label>
+                        <input matInput formControlName="price" placeholder="price" type="name" >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>consumable</mat-label>
+                        <input matInput formControlName="consumable" placeholder="consumable" type="name" >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>images</mat-label>
+                        <input matInput formControlName="images" placeholder="images" type="name" >
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Quantity</mat-label>
+                        <input matInput formControlName="qnt" placeholder="1" type="name" >
+                    </mat-form-field>
+
+                </div>
+            </form>
+            <button mat-raised-button color type="submit" (click)="Submit()" color="primary">Submit</button>
+        </mat-card-actions>
+        
+    </mat-card>
+</div>
+

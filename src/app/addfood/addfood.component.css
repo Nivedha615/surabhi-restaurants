@@ -1,0 +1,64 @@
+#background {
+	background-image:
+		url('https://xd.adobe.com/ideas/wp-content/uploads/2020/09/Being-Shady-How-to-Use-Gradient-Color-in-UX-Design-8-825x550.jpeg');
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.error {
+	color: red;
+	font-size: 20px;
+}
+
+
+.purple, a {
+	color: #953d95 !important;
+}
+h1 {
+	color: coral;
+	font-weight: bold;
+}
+.center{
+	margin-left: 32%;
+}
+.example-container mat-label{
+	color: #fff;
+	} 
+	   
+		
+	.example-container mat-form-field appearance{
+		color: #fff;
+	}
+	.mat-card{
+		text-align: center;
+		border: none;
+		width: 500px;
+		padding: 30px;
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background: rgb(184, 211, 230);
+		background: linear-gradient(90deg,rgb(184, 217, 241) 0%,hsla(260,29%,36%,1) 100%);
+		
+		
+		
+	}
+	.mat-card-title{
+		color: #fff;
+		margin-bottom: 30px;
+	}
+	.mat-card-subtitle{
+		color: #fff;
+		margin-top:10px;
+		margin-bottom: 10px;
+	}
+	.mat-card-actions{
+		color: #fff;
+	}
+	.mat-card a{
+		color: #fff;
+	}
+	

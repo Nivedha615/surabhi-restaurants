@@ -1,0 +1,36 @@
+<form id = "menuform" [formGroup] = 'menuForm'(ngSubmit)="adduser()">
+    <h1 mat-dialog-title>Add Dishes</h1>
+      <div mat-dialog-content>
+           <mat-form-field appearance="outline">
+             <mat-label>Username</mat-label>
+               <input matInput formControlName="username"
+                             type="text" required>
+           </mat-form-field>
+           <br>
+             <mat-form-field appearance="outline"> 
+               <mat-label>Email</mat-label>
+               <input matInput formControlName="Email" 
+                             type="text" required>
+           </mat-form-field>
+             <br>
+             <mat-form-field  appearance="outline">
+               <mat-label>Phone</mat-label>
+               <input matInput formControlName="Phone" 
+                             type="text" required>
+       
+             </mat-form-field>
+             <br>       
+             <mat-form-field appearance="outline">
+               <mat-label>Type</mat-label>
+               <input matInput formControlName="type" 
+                             type="text" required>
+       
+             </mat-form-field>
+             
+             
+           </div>
+             <div mat-dialog-actions [align]="'end'">
+               <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+               <button mat-raised-button color="primary">{{action}}</button>
+             </div>
+          </form>

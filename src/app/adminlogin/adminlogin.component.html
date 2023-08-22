@@ -1,0 +1,33 @@
+<div id="background">
+  <form id = "loginform"[formGroup] = 'loginForm' >
+      <h1 id="login">ADMIN LOGIN</h1>
+      <mat-form-field>
+          <input matInput formControlName = "username"
+                        placeholder="User Name"
+                        type="text" required>
+  
+        </mat-form-field>
+        <br>
+        <small class = "errormsg">
+          {{getUserNameErrorMsg()}}
+      </small>
+        <br>
+        <mat-form-field>
+          <input matInput formControlName = "password"
+                        placeholder="Password"
+                        type="password" required>
+  
+        </mat-form-field>
+        <br>  
+        <small class = "errormsg">
+          {{getPasswordErrorMsg()}}
+      </small>
+        <br>
+        <button  mat-raised-button class="btn-responsive" type="submit" (click) = "login()" color="warn">Submit</button>
+        <button  mat-raised-button class="btn-responsive"  id="reg" type="submit" (click) = "register()" color="warn">Register</button>
+        
+      
+      </form>
+  </div>
+  
+    

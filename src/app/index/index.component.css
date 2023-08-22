@@ -1,0 +1,81 @@
+#background {
+	background-image : url("../../assets/images/bg.jpg");
+    height: 100%;
+	filter: brightness(4px);	
+	background-size: cover;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	color: #570530;
+	font-weight: bold;
+    /* text-align: center; */
+    border: 0vh;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 12vh;
+    letter-spacing: 0.03em;
+    line-height: 1em;
+}
+
+h2 a {
+	color: white;
+	font-weight: bold;
+}
+h2{
+	font-family:Sans-serif;
+    color:#8E05C2 ;
+    font-size: 1 em;
+    /* text-align: center; */
+    padding-top: 5vh;
+    font-weight: bold;
+    padding-left: 15px;
+}
+#center{
+    margin: 0;
+    position: absolute;
+    padding-left: 45em;
+}
+button{
+    white-space: normal !important;
+            word-wrap: break-word;
+
+    background: #655D8A;
+     background-image: -webkit-linear-gradient(top, #8E0505, #8E0505);
+     background-image: -moz-linear-gradient(top, #8E0505, #8E0505);
+     background-image: -ms-linear-gradient(top, #8E0505, #8E0505);
+     background-image: -o-linear-gradient(top, #8E0505, #8E0505);
+     background-image: -webkit-gradient(to bottom, #8E0505, #8E0505);
+     -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+     border-radius: 3px;
+     color: #FFFFFF;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+     /* padding: 10px 20px 10px 20px; */
+     /* margin: 50px auto; */
+     /* border: solid #337FED 1px; */
+     text-decoration: none;
+     display: inline-block;
+     cursor: pointer;
+     text-align: center;
+    
+     
+}
+button:hover {
+    border: solid rgba(0,0,0,0.4)f 1px;
+    /* background: #30E3CB; */
+    background-image: -webkit-linear-gradient(top, #FC4F4F, #FC4F4F);
+    background-image: -moz-linear-gradient(top, #FC4F4F, #FC4F4F);
+    background-image: -ms-linear-gradient(top, #FC4F4F, #FC4F4F);
+    background-image: -o-linear-gradient(top, #FC4F4F, #FC4F4F);
+    background-image: -webkit-gradient(to bottom, #FC4F4F, #FC4F4F);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+ .book{
+     margin-left: 30px;
+ }
